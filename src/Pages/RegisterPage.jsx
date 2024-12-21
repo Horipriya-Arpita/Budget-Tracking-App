@@ -106,7 +106,7 @@ const RegisterPage = () => {
           <Button
             variant="contained"
             fullWidth
-            sx={{ mt: 3, py: 1, fontWeight: "bold", borderRadius: 2 , background: theme.scardbg}}
+            sx={{ mt: 3, py: 1, fontWeight: "bold", borderRadius: 2 , background: theme.buttonColor}}
           >
             Register
           </Button>

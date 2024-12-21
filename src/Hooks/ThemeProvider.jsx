@@ -7,8 +7,8 @@ const ThemeContext = createContext();
 // ThemeProvider.jsx
 const themes = {
   light: {
-    // background: 'linear-gradient(180deg, #F0F8FF 0%, #D0EFFF 50%, #A0D7FF 100%)',
-    background: 'linear-gradient(180deg, #f0c6ca 10%, #ffdeec 60%, #f0c6ca 100%)',
+    background: 'linear-gradient(180deg, #F0F8FF 0%, #dfe3f5 50%, #bbc6f2 100%)',
+    //background: 'linear-gradient(180deg, #f0c6ca 10%, #ffdeec 60%, #f0c6ca 100%)',
     color: '#003366',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
     formBg: 'linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%)' ,//'#F8F9FD',
@@ -19,16 +19,20 @@ const themes = {
     buttonHover: '#12B1D1',
     socialButtonBg: 'linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 100%)',
     linkColor: '#0099ff',
-    cardBg: 'linear-gradient(45deg, #fde9f7 10%, #ffc7e2 60%, #fce3ee 100%)',//'#e1b4c1',
+    //cardBg: 'linear-gradient(45deg, #fde9f7 10%, #ffc7e2 60%, #fce3ee 100%)',//'#e1b4c1',
+    cardBg: 'linear-gradient(45deg, #ebf7ff 10%, #bae1f7 60%, #f4ebfa 100%)',//'#e1b4c1',
     cardText: '#003366',
     divider: '#d1d5db',
     progressBarBg: '#e5e7eb',
     progressBarColor: ['#FF6384', '#FFCE56', '#36A2EB', '#4CAF50'],
     chartLegendColor: '#333333',
     headerTextColor: '#003366',
-    buttonColor: '#007bff',
-    scardbg: 'linear-gradient(180deg, #f79cb7 0%, #f0b1c4 90%, #f081a2 100%)',
-    
+    buttonColor: 'linear-gradient(180deg, #23487d 0%, #10376e 90%, #031a3b 100%)',
+
+    //scardbg: 'linear-gradient(180deg, #f79cb7 0%, #f0b1c4 90%, #f081a2 100%)',
+    scardbg: 'linear-gradient(180deg, #b3d2ff 0%, #6da7f7 90%, #2158a6 100%)',
+
+
     detailDialog: {
       appBarColor: "#FF7043",
       expenseBgColor: "#FF7043",
@@ -99,11 +103,11 @@ const themes = {
 
     navbar :
     {
-      navbarBg: 'linear-gradient(180deg, #ffc7e2 2%, #fde9f7 20%, #ffc7e2 80%, #f7a6be 100%)',//'#e1b4c1',
-      // navbarBg: 'linear-gradient(180deg, #D0EFFF 0%, #A0D7FF 100%)',//'#f0f0f0',
-      navbarColor: '#000',
-      navItemBg: 'linear-gradient(180deg, #f79cb7 0%, #f0b1c4 90%, #f081a2 100%)',
-      //navItemBg: '#B0D9FF',
+      //navbarBg: 'linear-gradient(180deg, #ffc7e2 2%, #fde9f7 20%, #ffc7e2 80%, #f7a6be 100%)',//'#e1b4c1',
+      navbarBg: 'linear-gradient(180deg, #b3d2ff 0%, #6da7f7 90%, #2158a6 100%)',
+      navbarColor: '#fff',
+      //navItemBg: 'linear-gradient(180deg, #f79cb7 0%, #f0b1c4 90%, #f081a2 100%)',
+      navItemBg: 'linear-gradient(180deg, #23487d 0%, #10376e 90%, #031a3b 100%)',//      '#B0D9FF',
       navItemHoverBg: 'linear-gradient(90deg, #8CCAF7 0%, #66B3FF 100%)',
     },
 
@@ -144,7 +148,8 @@ const themes = {
     buttonHover: '#2C3F57',
     socialButtonBg: 'linear-gradient(45deg, #131b24 0%, #2C3F57 100%)',
     linkColor: '#66B3FF',
-    cardBg: '#1e1e1e',
+    // cardBg: '#1e1e1e',
+    cardBg: 'linear-gradient(45deg, #03203b 10%, #041930 60%, #072b52 100%)',//'#e1b4c1',
     cardText: '#ffffff',
     divider: '#424242',
     progressBarBg: '#2a2a2a',
@@ -152,6 +157,8 @@ const themes = {
     chartLegendColor: '#ffffff',
     headerTextColor: '#ffffff',
     buttonColor: '#3f51b5',
+    scardbg: 'linear-gradient(180deg, #081a33 0%, #041021 90%, #020e1f 100%)',
+
 
     detailDialog: {
       appBarColor: "#FF7043",
@@ -224,7 +231,7 @@ const themes = {
 
     navbar :
     {
-      navbarBg: 'linear-gradient(180deg, #1E2A38 0%, #0E1B2A 100%)',
+      navbarBg: 'linear-gradient(45deg, #03203b 10%, #041930 60%, #072b52 100%)',//'linear-gradient(180deg, #1E2A38 0%, #0E1B2A 100%)',
       navbarColor: '#ffff',//'#ffff',
       navItemBg: '#1E2E3E',
       navItemHoverBg: 'linear-gradient(90deg, #2C3F57 0%, #3E577A 100%)',

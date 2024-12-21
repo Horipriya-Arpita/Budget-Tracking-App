@@ -3,6 +3,7 @@ import { useTheme } from "../Hooks/ThemeProvider";
 
 import { Delete} from '@mui/icons-material';
 import { Box, Typography } from "@mui/material";
+import Features from "../Components/HomeComponent/Features";
 
 import { 
   EditVecIcon,
@@ -44,7 +45,9 @@ const HomePage = () => {
 
   return (
     <div style={{ padding: '20px', color: theme.color }}>
-      <Box
+      
+      <Features/>
+      {/* <Box
       sx={{
         background: theme.cardBg,
         color: theme.expenseOverview.cardText,
@@ -115,7 +118,7 @@ const HomePage = () => {
 
       </Box>
       </Box>
-          
+           */}
       
      
     </div>

@@ -2,11 +2,16 @@ import React from "react";
 import { Box, Typography, TextField, Checkbox, Button, Link, Stack, IconButton } from "@mui/material";
 import { Google, Apple, Facebook, Email, Visibility } from "@mui/icons-material";
 import { useTheme } from "../Hooks/ThemeProvider";
-
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
 
   const { theme } = useTheme();
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate('/categories');
+  };
 
 
   return (
@@ -33,7 +38,7 @@ const LoginPage = () => {
           </Typography>
           <Typography variant="body2" mb={3}>
             Don&apos;t have an account?{" "}
-            <Link href="#" underline="none" color="primary" fontWeight="bold">
+            <Link href="/register" underline="none" color="primary" fontWeight="bold">
               Register here
             </Link>
           </Typography>
@@ -56,6 +61,7 @@ const LoginPage = () => {
             label="Password"
             margin="normal"
             type="password"
+            color={theme.color}
             InputProps={{
               startAdornment: <Visibility color="action" sx={{ mr: 1 }} />,
             }}
@@ -77,7 +83,8 @@ const LoginPage = () => {
             variant="contained"
             color="primary"
             fullWidth
-            sx={{ mt: 3, py: 1, fontWeight: "bold", borderRadius: 2 , background: theme.scardbg}}
+            sx={{ mt: 3, py: 1, fontWeight: "bold", borderRadius: 2 , background: theme.buttonColor}}
+            onClick={handleNavigation}
           >
             Sign in
           </Button>
