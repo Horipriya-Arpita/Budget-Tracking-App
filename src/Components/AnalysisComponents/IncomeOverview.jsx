@@ -69,7 +69,7 @@ export default function IncomeOverview() {
       <Divider sx={{ marginBottom: '20px', backgroundColor: theme.divider }} />
 
       <Typography variant="h6" textAlign="center" gutterBottom sx={{ color: theme.expenseOverview.typographyColor }}>
-        Expense Overview
+        Income Overview
       </Typography>
 
       <Box

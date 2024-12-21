@@ -125,7 +125,7 @@ const ExpenseFlow = () => {
           "&:hover": { backgroundColor: "rgba(255,255,255,0.1)" },
         }}
       >
-        <Typography>INCOME FLOW</Typography>
+        <Typography>Expense FLOW</Typography>
       </Button>
 
       {/* Chart Section */}

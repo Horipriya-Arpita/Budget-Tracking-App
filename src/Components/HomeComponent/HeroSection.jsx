@@ -28,7 +28,7 @@ const HeroSection = () => {
         variant="h3"
         component="h1"
         fontWeight="bold"
-        color="text.primary"
+        color={theme.color}
         gutterBottom
       >
         Take Control of Your Finances, One Step at a Time
@@ -45,7 +45,7 @@ const HeroSection = () => {
       {/* Subtitle */}
       <Typography
         variant="subtitle1"
-        color="text.secondary"
+        color={theme.color}
         gutterBottom
         sx={{ maxWidth: "600px", mx: "auto", mb: 4 }}
       >

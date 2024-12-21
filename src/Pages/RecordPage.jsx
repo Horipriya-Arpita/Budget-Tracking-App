@@ -192,6 +192,7 @@ import {
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import { useTheme } from "../Hooks/ThemeProvider";
 import DetailDialog from "../Components/BudgetComponents/DetailDialog";
+import { FoodIcon, BabyIcon, EducationIcon, SalaryIcon, MoneyIcon } from "../Components/Icons/ExpenseIcons";
 
 const RecordPage = () => {
   const { theme } = useTheme();
@@ -200,10 +201,10 @@ const RecordPage = () => {
 
   // Dummy data for records
   const records = [
-    { id: 1, category: "Food", type: "Expense", amount: -100, method: "Cash", iconColor: theme.recordPage.expenseColor },
-    { id: 2, category: "Education", type: "Expense", amount: -600, method: "Cash", iconColor: theme.recordPage.expenseColor },
-    { id: 3, category: "Salary", type: "Income", amount: 10000, method: "Cash", iconColor: theme.recordPage.incomeColor },
-    { id: 4, category: "Salary", type: "Income", amount: 7500, method: "Cash", iconColor: theme.recordPage.incomeColor },
+    { id: 1, category: "Food", type: "Expense", amount: -100, method: "Cash", iconColor: theme.scardbg, icon: <FoodIcon/> },
+    { id: 2, category: "Education", type: "Expense", amount: -600, method: "Cash", iconColor: theme.scardbg, icon: <EducationIcon/> },
+    { id: 3, category: "Salary", type: "Income", amount: 10000, method: "Cash", iconColor: theme.scardbg , icon: <SalaryIcon/>},
+    { id: 4, category: "Salary", type: "Income", amount: 7500, method: "Cash", iconColor: theme.scardbg, icon: <MoneyIcon/> },
   ];
 
   const totalExpense = 700;
@@ -276,10 +277,11 @@ const RecordPage = () => {
               }}
             >
               <Box sx={{ display: "flex", alignItems: "center" }}>
+              
                 <Box
                   sx={{
-                    width: 40,
-                    height: 40,
+                    width: 50,
+                    height: 50,
                     background: record.iconColor,
                     borderRadius: "50%",
                     display: "flex",
@@ -287,7 +289,10 @@ const RecordPage = () => {
                     alignItems: "center",
                     mr: 2,
                   }}
-                />
+                >
+                {record.icon}
+                </Box>
+                
                 <Box>
                   <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
                     {record.category}
