@@ -82,6 +82,7 @@ const Features = () => {
         fontWeight="bold"
         color={theme.color}
         gutterBottom
+        
       >
         Features
       </Typography>

@@ -49,10 +49,41 @@ const LoginPage = () => {
             variant="outlined"
             label="Email"
             margin="normal"
+            
             InputProps={{
               startAdornment: <Email color="action" sx={{ mr: 1 }} />,
             }}
+            sx={{border: theme.color}}
           />
+
+<TextField
+      fullWidth
+      variant="outlined"
+      label="Email"
+      margin="normal"
+      InputProps={{
+        startAdornment: <Email color="action" sx={{ mr: 1 }} />,
+      }}
+      sx={{
+        '& .MuiOutlinedInput-root': {
+          // Set the border color based on the theme
+          '& fieldset': {
+            borderColor: theme.divider,
+          },
+          '&:hover fieldset': {
+            borderColor: theme.color,
+          },
+          '&.Mui-focused fieldset': {
+            borderColor: theme.color,
+          },
+        },
+        // Set the input background color
+        '& .MuiInputBase-input': {
+          backgroundColor: theme.divider,
+          color: theme.color,
+        },
+      }}
+    />
 
           {/* Password Input */}
           <TextField

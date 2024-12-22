@@ -13,6 +13,7 @@ import AccountPage from './Pages/AccountPage';
 import AddPage from './Pages/AddPage';
 import LoginPage from './Pages/LoginPage';
 import RegisterPage from './Pages/RegisterPage';
+import ProfilePage from './Pages/ProfilePage';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/add' element={<AddPage/>}/>
           <Route path='/login' element={<LoginPage/>}/>
           <Route path='/register' element={<RegisterPage/>}/>
+          <Route path='/profile' element={<ProfilePage/>}/>
 
         </Routes>
       </Router>

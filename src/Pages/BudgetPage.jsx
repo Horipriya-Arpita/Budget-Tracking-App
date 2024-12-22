@@ -181,7 +181,7 @@ const BudgetPage = () => {
                 borderRadius: 2,
               }}
             >
-              <Card sx={{ background: theme.scardbg, color: theme.budgetPage.cardText, borderRadius: 2 }}>
+              <Card sx={{ background: theme.scardbg, color: theme.budgetPage.cardText, borderRadius: 2 , border: "1px solid"}}>
                 <CardContent>
                   <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
                     <Typography variant="subtitle1" sx={{ color: category.color, fontWeight: 'bold' }}>
@@ -226,6 +226,7 @@ const BudgetPage = () => {
                 textAlign: 'center',
                 background: theme.scardbg,
                 borderRadius: 2,
+                border: "1px solid",
               }}
             >
               <Card sx={{ background: theme.scardbg, color: theme.budgetPage.cardText, borderRadius: 2 }}>

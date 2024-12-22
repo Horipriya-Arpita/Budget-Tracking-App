@@ -274,6 +274,7 @@ const RecordPage = () => {
                 p: 2,
                 borderRadius: 2,
                 cursor: "pointer",
+                border: "1px solid",
               }}
             >
               <Box sx={{ display: "flex", alignItems: "center" }}>

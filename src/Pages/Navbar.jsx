@@ -119,6 +119,10 @@ const Navbar = () => {
           <NavbarItem onClick={() => handleNavClick("/categories")}>
             Categories
           </NavbarItem>
+
+          <NavbarItem onClick={() => handleNavClick("/profile")}>
+            Profile
+          </NavbarItem>
         </ul>
       </div>
 
